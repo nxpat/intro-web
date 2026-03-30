@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Événements avec JavaScript</title>
+  <style>
+    .code {
+      font-style: thick;
+      font-family: Monospace, monospace, "Lucida Console", Courier; 
+    }
+    .js0 {
+      display: block;
+      background-color: #d5c7c2;
+      color: black;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20 auto;
+    }
+    #resultat {
+      color: darkred;
+    }
+    #e1 {
+      display: block;
+      background-color: #89aa97;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20 auto;
+    }
+    #e2 {
+      display: block;
+      background-color: #f4e3b7;
+      color: #568564;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20 auto;
+    }
+    #e3 {
+      display: block;
+      background-color: #fd7e89;
+      color: black;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20 auto;
+    }
+  </style>
+  <script lang="javascript">
+      
+    // fonction de rappel du bouton
+    function change() {
+      // obtenir l'élément à partir de la valeur de son attribut `id`
+      let e = document.getElementById('optionnel')
+      // inverser la valeur de son attribut `hidden`
+      e.hidden = ! e.hidden    
+    }  
+
+    function majuscules(e) {
+       var ss = e.target.selectionStart;
+       var se = e.target.selectionEnd;
+       e.target.value = e.target.value.toUpperCase();
+       e.target.selectionStart = ss;
+       e.target.selectionEnd = se;
+    }
+        
+  </script>
+</head>
+ 
+<body>
+   <h1>JavaScript</h1>
+
+   <h3>Programmes JavaScript</h3>
+   <!-- Un clic sur le paragraphe `Bonjour !` affiche une boîte d’alerte (fonction `alert`) 
+   avec le message `Salut !` -->
+   <div class="js0">
+   <p>Si <span class="code"> x = 5, y = 6 </span> et <span class="code"> z = x+y,</span> alors</p>
+   <p id="resultat">Le résultat du <b>code JavaScript</b> sera afiché ici.</p>
+   <p>Le résultat est aussi affiché dans la console.</p>
+   </div>
+   
+  <h3>Événements avec JavaScript</h3>
+  
+  <!-- Un clic sur le paragraphe `Bonjour !` affiche une boîte d’alerte (fonction `alert`) 
+  avec le message `Salut !` -->
+  <div id="e1">
+  <p onclick="alert('Salut à toi !')">Cliquez-moi !</p>
+  </div>
+  
+  <!-- Bouton qui appelle `change()` lorsqu'on clique dessus--> 
+  <div id="e2">
+  <input type="button" value="+/-" onclick="change()"></p>
+  <p id="optionnel">Un paragraphe qui joue à cache-cache.</p>
+  </div>
+
+  <div id="e3">
+  <!-- Champ d'entrée -->
+   <p><b>Champ d'entrée en majuscule :</b></p>
+  <p>Avec Javascript : <input type="text" oninput="majuscules(event)" /></p>
+  <p>Avec CSS : <input style="text-transform: uppercase" type="text" /></p>
+  </div>
+
+  <p style="padding: 12px 0"><a href="index.html">Retour</a> à la page index.html</p>
+
+   <script>
+   var x, y, z;  // déclaration de 3 variables
+   x = 5;    // assignement de la valeur 5 à x
+   y = 6;    // assignement de la valeur 6 à y
+   z = x + y;  // assignement de la spmme de x et y 5 à z
+   
+   console.log("La valeur de z est " + z);
+      
+   document.getElementById("resultat").innerHTML = "la valeur de z est " + z + ".";
+   </script>
+   
+</body>
+</html>

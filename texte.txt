@@ -1,0 +1,5 @@
+Cette page est un simple document texte.
+
+Tim Berners-Lee, né le 8 juin 1955 à Londres, est un physicien et informaticien britannique, principal inventeur du World Wide Web (WWW, le Web) alors qu'il travaillait à l'Organisation européenne pour la recherche nucléaire (CERN) au tournant des années 1990. Depuis 1994, il préside le World Wide Web Consortium (W3C), organisme qu'il a fondé. En juillet 2004, il est fait chevalier par la reine Élisabeth II. Il est lauréat du prix Turing 20161.
+
+En créant le Web, Tim Berners-Lee invente ses trois technologies fondatrices : les adresses Web sous forme d'URL, le protocole de communication HTTP, et le langage informatique HTML. Il fut aidé à ses débuts par l'ingénieur et informaticien belge Robert Cailliau qui cosigna notamment avec lui, en novembre 1990, un document désormais entré dans l'Histoire et intitulé « WorldWideWeb : Proposition pour un projet hypertexte2». 

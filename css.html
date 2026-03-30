@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">  <!-- encodage de la page -->
+  <meta name="viewport" content="width=device-width">  <!-- "Responsive" présentation adaptive -->
+  <title>Introduction à HTML</title>
+  <style> 
+  body {
+    background-color: #777372; /* code couleur en hexadécimal */
+    display: block;
+    margin: auto 4%;
+    width: 800px;
+    height: auto; 
+  }
+  
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+    
+  h1 {
+    color: orange;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  h2 {
+    color: white;
+  }
+    
+  p {
+    color: #e8e8e6;  
+    font-size: 130%;
+    line-height: 2em;
+    margin: 0;   
+  }
+    
+  .code {
+    font-style: thick;
+    font-family: Monospace, monospace, "Lucida Console", Courier; 
+  }
+
+  .rose {
+    background-color: lightpink;
+    color: red;
+    font-style: thick;
+    letter-spacing: 4px;
+    font-family: Monospace, monospace, "Lucida Console", Courier;
+    border-radius: 4px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  a:link {
+    color: #603f8b;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #7fe5f0;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+    
+  .button {
+    background-color: #dacac4;
+    border: none;
+    color: #725446;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button {
+    border-radius: 12px;
+  }
+    
+  .button:hover {
+    background-color: orange;
+    color: #e8e8e6;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100px; 
+  }
+  
+  #images{
+    margin-top: 60px;
+    text-align:center;
+  }
+</style>
+</head>
+
+<body>
+  <h1>Ma première page Web !</h1>
+  <h2>Hello World !</h2>
+  <p>Un paragraphe.</p>
+  <br>
+  <p>Un paragraphe avec des symboles mathématiques &epsilon; &in; &Fscr;.</p>
+  <br>
+  <p>Pour modifier <span style="color:#C08000; font-weight: bold;">une partie de texte</span> dans un <span style="color:#80FF00; font-weight: bold;">paragraphe</span> sans créer une nouvelle classe, on utilise <span class="code">&lt;span&gt;</span>.</p>
+  <p>Ici en utilisant la classe <span class="rose">class="rose"</span>.</p>
+  <br>
+  <p>Une <a href="about.html">page<a/> à propos de Tim Berners-Lee.</p>
+  <br>
+  <button class="button" onclick="window.location.href='https://www.w3.org/People/Berners-Lee/';">J'y vais !</button>
+  <div id="images">
+    <img class="logo" src="html5.png" alt="Logo HTML5"/>
+    <img class="logo" src="css3.png" alt="Logo CSS3"/>
+    <img class="logo" src="js.png" alt="Logo Javascript"/>
+  </div>
+<p style="padding: 12px 0"><a href="index.html">Retour</a> à la page index.html</p>
+</body>
+
+</html>

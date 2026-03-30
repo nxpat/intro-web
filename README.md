@@ -489,8 +489,6 @@ Il existe de nombreux événements. Voici les plus utilisés :
 | `click`, `dblclick` | Clic ou double-clic de la souris |
 | `keydown`, `keyup` | Appui ou relâchement d’une touche du clavier |
 | `mouseenter`, `mouseleave` | La souris entre ou sort de la zone de l’élément |
-| `onmousedown`, `onmouseup` | Appui/relâchement du bouton de la souris |
-| `onmousemove`, `onmouseover` | Déplacement de la souris |
 | `change` | Modification de valeur d’un champ de saisie (`<input>`) |
 | `submit` | Envoi d’un formulaire (`<form>`) |
 | `DOMContentLoaded` | Le HTML de la page est entièrement chargé et prêt |
@@ -534,15 +532,6 @@ bouton.addEventListener("click", basculerModeSombre);
 ```
 
 *(Il suffirait ensuite d'avoir une règle CSS `.dark-mode { background-color: black; color: white; }` pour que la magie opère).*
-
-Voici une liste d'éléments **HTML** couramment utilisés pour intéragir avec une pae Web :
-
-| Élément | description |
-| ------------ | ----------- |
-| [`button`](https://www.w3schools.com/tags/tag_button.asp)  | bouton à cliquer |  
-| [`input`](https://www.w3schools.com/tags/tag_input.asp)  | champ d'entrée |  
-| [`form`](https://www.w3schools.com/tags/tag_form.asp)  | formulaire |  
-| [`range`](https://www.w3schools.com/howto/howto_js_rangeslider.asp)  | ascenceur |  
 
 Pour plus d'informations (références W3C et Mozilla) :
 
