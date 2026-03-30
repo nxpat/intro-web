@@ -1,0 +1,40 @@
+<!-- Structure de notre page Web. Elle contient un bouton pour le mode sombre, 
+  et un petit gestionnaire de tâches pour montrer la création d'éléments.-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo JavaScript & DOM - NSI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Découverte de JavaScript</h1>
+        <button id="btnSombre">Activer le mode sombre</button>
+    </header>
+
+    <main>
+        <section class="boite">
+            <h2>1. Modification du DOM</h2>
+            <p id="message">Ce texte va être modifié par JavaScript.</p>
+            <button id="btnModifier">Modifier le texte</button>
+        </section>
+
+        <section class="boite">
+            <h2>2. Création d'éléments (To-Do List)</h2>
+            <input type="text" id="nouvelleTache" placeholder="Entrez une tâche...">
+            <button id="btnAjouter">Ajouter</button>
+            
+            <ul id="maListe">
+                <li>Apprendre le HTML</li>
+                <li>Comprendre le CSS</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
